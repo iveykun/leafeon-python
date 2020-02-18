@@ -72,7 +72,7 @@ def main():
 
 	async def birthday():
 		
-		channel = client.get_channel(408948703039193089) # rewrite general is 408948703039193089, fish is 619320295999799299
+		channel = client.get_channel(whateveryour number is)
 		fileName = open("birthdayFile.txt", 'r')
 		today = time.strftime('%m%d')
 

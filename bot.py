@@ -9,11 +9,6 @@ token = os.getenv('DISCORD_TOKEN')
 token = ''
 
 client = discord.Client()
-x=datetime.today()
-y = x.replace(day=x.day, hour=10, minute=0, second=0, microsecond=0) + timedelta(days=1)
-delta_t=y-x
-
-secs=delta_t.total_seconds()
 
 @client.event
 async def on_ready():
@@ -64,7 +59,6 @@ async def on_message(message):
 		print("Added to database:", date, bday)
 		await message.channel.send(f"Added to database: " + date + ' ' + bday)
 		
-	
 
 async def birthday():
 	
